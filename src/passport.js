@@ -17,7 +17,7 @@ passport.use(
     {
       clientID: process.env.GH_ID,
       clientSecret: process.env.GH_SECRET,
-      callbackURL: `https://young-shelf-30020.herokuapp.com${
+      callbackURL: `https://suspicious-cori-41b99d.netlify.com${
         routes.githubCallback
       }`
     },
