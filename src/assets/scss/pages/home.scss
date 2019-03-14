@@ -1,0 +1,31 @@
+@import '../config/responsiveVar';
+@import '../config/fadeinAni';
+
+.home-videos {
+  animation: fade-in;
+  animation-fill-mode: both;
+  animation-duration: 0.5s;
+
+  display: grid;
+  grid-gap: 20px;
+
+  @include sm {
+    grid-template-columns: repeat(1, minmax(200px, 1fr));
+  }
+  @include md {
+    grid-template-columns: repeat(2, minmax(200px, 1fr));
+  }
+  @include xl {
+    grid-template-columns: repeat(6, minmax(150px, 1fr));
+
+    .videoBlock:first-child,
+    .videoBlock:nth-child(2) {
+      grid-column: span 3;
+    }
+    .videoBlock:nth-child(3),
+    .videoBlock:nth-child(4),
+    .videoBlock:nth-child(5) {
+      grid-column: span 2;
+    }
+  }
+}
