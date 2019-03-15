@@ -13,7 +13,7 @@ const multerVideo = multer({
   storage: multerS3({
     s3,
     acl: 'public-read',
-    bucket: 'cytube/video'
+    bucket: 'chtube/video'
   })
 });
 
@@ -21,7 +21,7 @@ const multerAvatar = multer({
   storage: multerS3({
     s3,
     acl: 'public-read',
-    bucket: 'cytube/avatars'
+    bucket: 'chtube/avatars'
   })
 });
 
