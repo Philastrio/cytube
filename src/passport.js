@@ -17,7 +17,7 @@ passport.use(
     {
       clientID: process.env.GH_ID,
       clientSecret: process.env.GH_SECRET,
-      callbackURL: `http://cytube.ahapage.net/${routes.githubCallback}`
+      callbackURL: `http://cytube.ahapage.net${routes.githubCallback}`
     },
     githubLoginCallback
   )
