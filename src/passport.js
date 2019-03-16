@@ -17,9 +17,7 @@ passport.use(
     {
       clientID: process.env.GH_ID,
       clientSecret: process.env.GH_SECRET,
-      callbackURL: `https://young-shelf-30020.herokuapp.com/${
-        routes.githubCallback
-      }`
+      callbackURL: `http://cytube.ahapage.net/${routes.githubCallback}`
     },
     githubLoginCallback
   )
