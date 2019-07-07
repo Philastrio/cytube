@@ -2,7 +2,6 @@
 
 Cloning Youtube with VanillaJS and NodeJS
 
-http://cytube.ahapage.net
 
 ## First Step: Pages
 
