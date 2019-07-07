@@ -51,7 +51,7 @@
     "build": "npm run build:server && npm run build:assets && npm run copyAll",
     "prebuild": "rm -rf build",
     "tunnel": "lt --port 4000",
-    "start": "npm run build && node build/init.js"
+    "start": "npm run build && forever start -l myapp.log --minUptime 5000 --spinSleepTime 2000 -a build/init.js"
   },
   "devDependencies": {
     "@babel/cli": "^7.2.3",
